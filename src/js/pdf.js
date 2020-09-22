@@ -41,6 +41,7 @@ export default {
     })
 
     req.open('GET', params.printable, true)
+    req.withCredentials = true;
     req.send()
   }
 }
